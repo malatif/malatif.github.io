@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Publications | Dr. Muhammad Abdul Latif</title>
+  <meta name="description" content="List of publications by Dr. Muhammad Abdul Latif.">
+  <style>
+    :root {
+      --bg: #f6f7fb;
+      --card: #ffffff;
+      --text: #1f2937;
+      --muted: #6b7280;
+      --accent: #2563eb;
+      --border: #e5e7eb;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.55;
+    }
+    header {
+      background: linear-gradient(135deg, #1e3a8a, #2563eb);
+      color: #fff;
+      padding: 48px 20px 40px;
+      text-align: center;
+    }
+    header h1 { margin: 0 0 8px; font-size: 2rem; }
+    header p { margin: 0; opacity: .9; }
+    nav { margin-top: 18px; }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 10px;
+      font-weight: 500;
+      border-bottom: 2px solid transparent;
+    }
+    nav a:hover, nav a.active { border-bottom-color: #fff; }
+    main { max-width: 900px; margin: 0 auto; padding: 28px 16px 60px; }
+    .toolbar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 20px;
+    }
+    .toolbar input {
+      flex: 1 1 260px;
+      padding: 10px 14px;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      font-size: 1rem;
+    }
+    .toolbar a.ads {
+      color: var(--accent);
+      font-weight: 600;
+      text-decoration: none;
+    }
+    .toolbar a.ads:hover { text-decoration: underline; }
+    #count { color: var(--muted); font-size: .9rem; margin-bottom: 10px; }
+    ol.pubs { list-style: none; margin: 0; padding: 0; counter-reset: pub; }
+    ol.pubs li {
+      counter-increment: pub;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 14px 16px 14px 60px;
+      margin-bottom: 10px;
+      position: relative;
+    }
+    ol.pubs li::before {
+      content: counter(pub, decimal-leading-zero);
+      position: absolute;
+      left: 16px;
+      top: 14px;
+      font-weight: 700;
+      color: var(--accent);
+    }
+    .title { display: block; font-weight: 600; }
+    .venue { color: var(--muted); font-size: .92rem; }
+    .venue a { color: var(--accent); text-decoration: none; font-weight: 500; }
+    .venue a:hover { text-decoration: underline; }
+    footer { text-align: center; color: var(--muted); font-size: .85rem; padding: 20px; }
+    @media (max-width: 520px) {
+      header h1 { font-size: 1.5rem; }
+      ol.pubs li { padding-left: 52px; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Publications</h1>
+  <p>Dr. Muhammad Abdul Latif</p>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="publications.html" class="active">Publications</a>
+  </nav>
+</header>
+
+<main>
+  <div class="toolbar">
+    <input type="search" id="search" placeholder="Search publications (title, journal, topic)...">
+    <a class="ads" href="https://ui.adsabs.harvard.edu/public-libraries/o2l23k3-S5aOQOBjCgyWTg" target="_blank" rel="noopener noreferrer">My publications on NASA ADS &rarr;</a>
+  </div>
+  <div id="count"></div>
+
+  <ol class="pubs" id="pubs">
+    <li><span class="title">Little Red Dots are Direct-Collapse Black Hole-Forming Galaxies</span><span class="venue">Accepted to <a href="https://arxiv.org/abs/2609.12049" target="_blank" rel="noopener noreferrer">ApJL</a></span></li>
+    <li><span class="title">Little Red Dots 2026</span><span class="venue"><a href="https://www.nature.com/articles/s41550-026-02967-7" target="_blank" rel="noopener noreferrer">Nature Astronomy</a></span></li>
+    <li><span class="title">Magnetic fields in extreme primordial halos: turbulent collapse and implications for early quasar formation</span><span class="venue">To be published in <a href="https://arxiv.org/abs/2608.11400" target="_blank" rel="noopener noreferrer">A&amp;A</a></span></li>
+    <li><span class="title">Habitable Worlds Formed at Cosmic Dawn</span><span class="venue">To be published in <a href="https://arxiv.org/abs/2501.08375" target="_blank" rel="noopener noreferrer">ApJL</a></span></li>
+    <li><span class="title">SKA-VLBI view of AGN jets in the early Universe</span><span class="venue">Published in <a href="https://arxiv.org/abs/2606.28304" target="_blank" rel="noopener noreferrer">Advancing Astrophysics with the SKA II</a></span></li>
+    <li><span class="title">Little Red Dot progenitors from Compact Starbursts: A Natural Path to Early AGN Formation</span><span class="venue">Published in <a href="https://arxiv.org/abs/2606.03375" target="_blank" rel="noopener noreferrer">ApJ</a></span></li>
+    <li><span class="title">How Overmassive Black Holes Formed at Cosmic Dawn</span><span class="venue">Published in <a href="https://arxiv.org/abs/2603.28682" target="_blank" rel="noopener noreferrer">ApJL</a></span></li>
+    <li><span class="title">Massive star clusters detected by JWST as natural birth places to form intermediate-mass black holes</span><span class="venue">Accepted by <a href="https://arxiv.org/abs/2603.24550" target="_blank" rel="noopener noreferrer">A&amp;A</a></span></li>
+    <li><span class="title">Impact of subhalo dynamical friction heating on the formation of the first structures in the universe</span><span class="venue">Accepted in <a href="https://arxiv.org/abs/2603.19385" target="_blank" rel="noopener noreferrer">MNRAS</a></span></li>
+    <li><span class="title">Constraints on dynamically-formed massive black holes in Little Red Dots from X-ray non-detections</span><span class="venue">Published in <a href="https://arxiv.org/abs/2602.21002" target="_blank" rel="noopener noreferrer">A&amp;A</a></span></li>
+    <li><span class="title">Synergies between Euclid, Roman and JWST Could Reveal Quasars at up to z~15</span><span class="venue">Published in <a href="https://arxiv.org/abs/2506.21658" target="_blank" rel="noopener noreferrer">ApJL</a></span></li>
+    <li><span class="title">Massive black hole formation in Population III star clusters</span><span class="venue">Published in <a href="https://arxiv.org/abs/2503.20415" target="_blank" rel="noopener noreferrer">A&amp;A</a></span></li>
+    <li><span class="title">Radio Signatures of a Massive Black Hole in GHZ9 at z ∼ 10</span><span class="venue">Published in <a href="https://arxiv.org/abs/2502.05266" target="_blank" rel="noopener noreferrer">MNRAS</a></span></li>
+    <li><span class="title">1000-10,000 M⊙ Primordial Stars Created the Nitrogen Excess in the Galaxy GS 3073 at z=5.55</span><span class="venue">Published in <a href="https://arxiv.org/abs/2502.04435" target="_blank" rel="noopener noreferrer">ApJL</a></span></li>
+    <li><span class="title">Radio emission from little red dots may reveal their true nature</span><span class="venue">Published in <a href="https://arxiv.org/abs/2502.03742" target="_blank" rel="noopener noreferrer">A&amp;A Letters</a></span></li>
+    <li><span class="title">Abundant Water from Early Supernovae at Cosmic Dawn</span><span class="venue"><a href="https://arxiv.org/abs/2501.02051" target="_blank" rel="noopener noreferrer">Nature Astronomy</a></span></li>
+    <li><span class="title">Primordial water formed in the era of the first stars</span><span class="venue"><a href="https://www.nature.com/articles/s41550-025-02483-0" target="_blank" rel="noopener noreferrer">Nature Research Briefing</a></span></li>
+    <li><span class="title">Massive black holes or stars first: the key is the residual cosmic electron fraction</span><span class="venue">Published in <a href="https://arxiv.org/abs/2412.02763" target="_blank" rel="noopener noreferrer">MNRASL</a></span></li>
+    <li><span class="title">Radio Emission from High-Redshift Active Galactic Nuclei in the JADES and CEERS Surveys</span><span class="venue">Published in <a href="https://arxiv.org/abs/2401.07910" target="_blank" rel="noopener noreferrer">AJ</a></span></li>
+    <li><span class="title">Magnetic field amplification in massive primordial halos: Influence of Lyman-Werner radiation</span><span class="venue">Published in <a href="https://arxiv.org/abs/2401.04054" target="_blank" rel="noopener noreferrer">A&amp;A</a></span></li>
+    <li><span class="title">Radio Emission From a z= 10.3 Black Hole in UHZ1</span><span class="venue">Published in <a href="https://arxiv.org/abs/2308.03837" target="_blank" rel="noopener noreferrer">ApJ</a></span></li>
+    <li><span class="title">Magnetic braking during direct collapse black hole formation</span><span class="venue">Published in <a href="https://arxiv.org/abs/2307.02256" target="_blank" rel="noopener noreferrer">ApJL</a></span></li>
+    <li><span class="title">Radio Emission from the First Quasars</span><span class="venue">Published in <a href="https://arxiv.org/abs/2304.12333" target="_blank" rel="noopener noreferrer">MNRASL</a></span></li>
+    <li><span class="title">Role of magnetic fields in the formation of direct collapse black holes</span><span class="venue">Published in <a href="https://arxiv.org/abs/2210.05611" target="_blank" rel="noopener noreferrer">ApJ</a></span></li>
+    <li><span class="title">Unveiling the contribution of Pop III stars in primeval galaxies at redshift ≥ 6</span><span class="venue">Published in <a href="https://arxiv.org/abs/2208.01673" target="_blank" rel="noopener noreferrer">ApJL</a></span></li>
+    <li><span class="title">Turbulent cold flows gave birth to the first quasars</span><span class="venue">Published in <a href="https://www.nature.com/articles/s41586-022-04813-y" target="_blank" rel="noopener noreferrer">Nature</a></span></li>
+    <li><span class="title">Revealing the origin of the first supermassive black holes</span><span class="venue"><a href="https://www.nature.com/articles/d41586-022-01560-y" target="_blank" rel="noopener noreferrer">Nature research briefing</a></span></li>
+    <li><span class="title">Public Release of A-SLOTH: Ancient Stars and Local Observables by Tracing Halos</span><span class="venue">Published in <a href="https://arxiv.org/abs/2206.00223" target="_blank" rel="noopener noreferrer">ApJ</a></span></li>
+    <li><span class="title">Origin of supermassive black holes in massive metal-poor protoclusters</span><span class="venue">Published in <a href="https://arxiv.org/abs/2204.02361" target="_blank" rel="noopener noreferrer">MNRAS</a></span></li>
+    <li><span class="title">Radio Emission from Direct-Collapse Black Holes</span><span class="venue">Published in <a href="https://arxiv.org/abs/2110.00012" target="_blank" rel="noopener noreferrer">ApJL</a></span></li>
+    <li><span class="title">The Birth Mass Function of Pop III Stars</span><span class="venue">Published in <a href="https://arxiv.org/abs/2109.10655" target="_blank" rel="noopener noreferrer">ApJ</a></span></li>
+    <li><span class="title">The Collapse of Atomically-Cooled Primordial Haloes. I. High Lyman-Werner Backgrounds</span><span class="venue">Published in <a href="https://arxiv.org/abs/2012.11612" target="_blank" rel="noopener noreferrer">MNRAS</a></span></li>
+    <li><span class="title">Radiation Hydrodynamical Simulations of the Birth of Intermediate-Mass Black Holes in the First Galaxies</span><span class="venue">Published in <a href="https://arxiv.org/abs/2012.09177" target="_blank" rel="noopener noreferrer">MNRAS</a></span></li>
+    <li><span class="title">Formation of Pop II star clusters in the aftermath of a pair instability supernova</span><span class="venue">Published in <a href="https://arxiv.org/abs/2007.13213" target="_blank" rel="noopener noreferrer">ApJL</a></span></li>
+    <li><span class="title">Inception of a first quasar at cosmic dawn</span><span class="venue">Published in <a href="https://arxiv.org/abs/2005.10436" target="_blank" rel="noopener noreferrer">MNRAS</a></span></li>
+    <li><span class="title">Radio Power from a Direct-Collapse Black Hole in CR7</span><span class="venue">Published in <a href="https://arxiv.org/abs/2004.04167" target="_blank" rel="noopener noreferrer">ApJL</a></span></li>
+    <li><span class="title">The Birth of Binary Direct-Collapse Black Holes</span><span class="venue">Published in <a href="https://arxiv.org/abs/2002.00983" target="_blank" rel="noopener noreferrer">ApJL</a></span></li>
+    <li><span class="title">UV regulated star formation in high-redshift galaxies</span><span class="venue">Published in <a href="https://arxiv.org/abs/1907.02958" target="_blank" rel="noopener noreferrer">MNRAS</a></span></li>
+    <li><span class="title">Intermittent fragmentation and statistical variations during gas collapse in magnetised atomic cooling haloes</span><span class="venue">Published in <a href="https://arxiv.org/abs/1903.00017" target="_blank" rel="noopener noreferrer">MNRAS</a></span></li>
+    <li><span class="title">Black hole formation in the context of dissipative dark matter</span><span class="venue">Published in <a href="https://arxiv.org/abs/1812.03104" target="_blank" rel="noopener noreferrer">MNRAS</a></span></li>
+    <li><span class="title">Titans of the Early Universe: The Prato Statement on the Origin of the First Supermassive Black Holes</span><span class="venue">To be published in <a href="https://arxiv.org/abs/1810.12310" target="_blank" rel="noopener noreferrer">PASA</a></span></li>
+    <li><span class="title">Formation of the First Black Holes</span><span class="venue">Book: <a href="https://www.worldscientific.com/worldscibooks/10.1142/10652" target="_blank" rel="noopener noreferrer">Formation of the First Black Holes</a></span></li>
+    <li><span class="title">Black hole formation via gas-dynamical processes</span><span class="venue"><a href="https://arxiv.org/abs/1807.06337" target="_blank" rel="noopener noreferrer">Book Chapter</a></span></li>
+    <li><span class="title">Early growth of high redshift black holes</span><span class="venue">Published in <a href="https://arxiv.org/abs/1801.07685" target="_blank" rel="noopener noreferrer">MNRAS</a></span></li>
+    <li><span class="title">Lyman-Werner Escape Fractions from the First Galaxies</span><span class="venue">Published in <a href="https://arxiv.org/abs/1701.07031" target="_blank" rel="noopener noreferrer">MNRAS</a></span></li>
+    <li><span class="title">The impact of ionizing radiation on the formation of a supermassive star in the early Universe</span><span class="venue">Published in <a href="https://arxiv.org/abs/1611.08594" target="_blank" rel="noopener noreferrer">MNRAS</a></span></li>
+    <li><span class="title">Formation of supermassive black hole seeds</span><span class="venue">Review published in <a href="https://arxiv.org/abs/1605.07391" target="_blank" rel="noopener noreferrer">PASA</a></span></li>
+    <li><span class="title">On the number density of "direct collapse" black hole seeds</span><span class="venue">Published in <a href="https://arxiv.org/abs/1601.00557" target="_blank" rel="noopener noreferrer">MNRAS</a></span></li>
+    <li><span class="title">Exploring the nature of the Lyman-α emitter CR7</span><span class="venue">Published in <a href="https://arxiv.org/abs/1512.01111" target="_blank" rel="noopener noreferrer">MNRAS</a></span></li>
+    <li><span class="title">Magnetic fields in primordial accretion disks</span><span class="venue">Published in <a href="https://arxiv.org/abs/1511.01317" target="_blank" rel="noopener noreferrer">A&amp;A</a></span></li>
+    <li><span class="title">Witnessing the birth of a supermassive protostar</span><span class="venue">Published in <a href="https://arxiv.org/abs/1510.02788" target="_blank" rel="noopener noreferrer">MNRAS</a></span></li>
+    <li><span class="title">Impact of dust cooling on direct collapse black hole formation</span><span class="venue">Published in <a href="https://arxiv.org/abs/1509.07034" target="_blank" rel="noopener noreferrer">ApJ</a></span></li>
+    <li><span class="title">Black hole formation and growth with non-Gaussian primordial density perturbations</span><span class="venue">Published in <a href="https://arxiv.org/abs/1507.05971" target="_blank" rel="noopener noreferrer">MNRAS</a></span></li>
+    <li><span class="title">How an improved implementation of H2 self-shielding influences the formation of massive stars and black holes</span><span class="venue">Published in <a href="https://arxiv.org/abs/1505.00263" target="_blank" rel="noopener noreferrer">MNRAS</a></span></li>
+    <li><span class="title">The chemical evolution of self-gravitating primordial disks</span><span class="venue">Published in <a href="https://arxiv.org/abs/1504.06296" target="_blank" rel="noopener noreferrer">A&amp;A</a></span></li>
+    <li><span class="title">Assessing inflow rates in atomic cooling halos: implications for direct collapse black holes</span><span class="venue">Published in <a href="https://arxiv.org/abs/1504.00263" target="_blank" rel="noopener noreferrer">MNRAS</a></span></li>
+    <li><span class="title">The formation of supermassive black holes in rapidly rotating disks</span><span class="venue">Published in <a href="https://arxiv.org/abs/1411.5902" target="_blank" rel="noopener noreferrer">A&amp;A</a></span></li>
+    <li><span class="title">Disk fragmentation and the formation of population III stars</span><span class="venue">Published in <a href="https://arxiv.org/abs/1411.0096" target="_blank" rel="noopener noreferrer">MNRAS</a></span></li>
+    <li><span class="title">How realistic UV spectra and X-rays suppress the abundance of direct collapse black holes</span><span class="venue">Published in <a href="https://arxiv.org/abs/1408.3061" target="_blank" rel="noopener noreferrer">MNRAS</a></span></li>
+    <li><span class="title">Effects of turbulence and rotation on protostar formation as a precursor to seed black holes</span><span class="venue">Published in <a href="https://arxiv.org/abs/1408.1253" target="_blank" rel="noopener noreferrer">A&amp;A</a></span></li>
+    <li><span class="title">Formation of carbon-enhanced metal-poor stars in the presence of far ultraviolet radiation</span><span class="venue">Published in <a href="https://arxiv.org/abs/1406.4450" target="_blank" rel="noopener noreferrer">ApJL</a></span></li>
+    <li><span class="title">The formation of massive primordial stars in the presence of moderate UV backgrounds</span><span class="venue">Published in <a href="https://arxiv.org/abs/1406.1465" target="_blank" rel="noopener noreferrer">ApJ</a></span></li>
+    <li><span class="title">A UV flux constraint on the formation of direct collapse black holes</span><span class="venue">Published in <a href="https://arxiv.org/abs/1404.5773" target="_blank" rel="noopener noreferrer">MNRAS</a></span></li>
+    <li><span class="title">Dark-matter halo mergers as a fertile environment for low-mass Population III star formation</span><span class="venue">Published in <a href="https://arxiv.org/abs/1402.4403" target="_blank" rel="noopener noreferrer">MNRAS</a></span></li>
+    <li><span class="title">Impact of baryonic streaming velocities on the formation of supermassive black holes via direct collapse</span><span class="venue">Published in <a href="https://arxiv.org/abs/1311.5866" target="_blank" rel="noopener noreferrer">MNRAS</a></span></li>
+    <li><span class="title">Magnetic fields during the formation of supermassive black holes</span><span class="venue">Published in <a href="https://arxiv.org/abs/1310.3680" target="_blank" rel="noopener noreferrer">MNRAS</a></span></li>
+    <li><span class="title">The characteristic black hole mass resulting from direct collapse in the early universe</span><span class="venue">Published in <a href="https://arxiv.org/pdf/1309.1097v2.pdf" target="_blank" rel="noopener noreferrer">MNRAS</a></span></li>
+    <li><span class="title">Black hole formation in the early Universe</span><span class="venue">Published in <a href="https://arxiv.org/pdf/1304.0962v2.pdf" target="_blank" rel="noopener noreferrer">MNRAS</a></span></li>
+    <li><span class="title">The formation of massive Pop III stars in the presence of turbulence</span><span class="venue">Published in <a href="https://arxiv.org/pdf/1306.2745.pdf" target="_blank" rel="noopener noreferrer">ApJL</a></span></li>
+    <li><span class="title">Massive black hole factories: Supermassive and quasi-star formation in primordial halos</span><span class="venue">Published in <a href="https://arxiv.org/pdf/1305.5923v1.pdf" target="_blank" rel="noopener noreferrer">A&amp;A</a></span></li>
+    <li><span class="title">Impact of an accurate modeling of primordial chemistry in high resolution studies</span><span class="venue">Published in <a href="https://arxiv.org/pdf/1305.1480.pdf" target="_blank" rel="noopener noreferrer">MNRAS</a></span></li>
+    <li><span class="title">The small scale dynamo and the amplification of magnetic fields in massive primordial haloes</span><span class="venue">Published in <a href="https://arxiv.org/pdf/1212.1619.pdf" target="_blank" rel="noopener noreferrer">MNRAS</a></span></li>
+    <li><span class="title">High resolution studies of massive primordial haloes</span><span class="venue">Published in <a href="https://arxiv.org/pdf/1210.1802.pdf" target="_blank" rel="noopener noreferrer">MNRAS</a></span></li>
+    <li><span class="title">The implications of dust for high-redshift protogalaxies and the formation of binary disks</span><span class="venue">Published in <a href="https://arxiv.org/pdf/1110.4256.pdf" target="_blank" rel="noopener noreferrer">A&amp;A</a></span></li>
+    <li><span class="title">Lyman alpha emission from the first galaxies: Implications of UV backgrounds and the formation of molecules</span><span class="venue">Published in <a href="https://arxiv.org/pdf/1106.3428.pdf" target="_blank" rel="noopener noreferrer">A&amp;A</a></span></li>
+    <li><span class="title">Lyman alpha emission from the first galaxies: Signatures of accretion and infall in the presence of line trapping</span><span class="venue">Published in <a href="https://arxiv.org/pdf/1102.0218.pdf" target="_blank" rel="noopener noreferrer">MNRAS</a></span></li>
+    <li><span class="title">The Impact of Lyman alpha Trapping on the Formation of Primordial Objects</span><span class="venue">Published in <a href="https://arxiv.org/pdf/1009.6108.pdf" target="_blank" rel="noopener noreferrer">MNRAS</a></span></li>
+    <li><span class="title">Magnetic fields during high redshift structure formation</span><span class="venue"><a href="https://arxiv.org/pdf/1211.4356.pdf" target="_blank" rel="noopener noreferrer">Astronomische Nachrichten</a></span></li>
+  </ol>
+</main>
+
+<footer>
+  Publication list adapted from <a href="https://sites.google.com/site/latifmaastro/publications" target="_blank" rel="noopener noreferrer">sites.google.com/site/latifmaastro</a>
+</footer>
+
+<script>
+  // Simple live search filter
+  const input = document.getElementById('search');
+  const items = Array.from(document.querySelectorAll('#pubs li'));
+  const count = document.getElementById('count');
+
+  function update() {
+    const q = input.value.trim().toLowerCase();
+    let shown = 0;
+    items.forEach(li => {
+      const match = li.textContent.toLowerCase().includes(q);
+      li.style.display = match ? '' : 'none';
+      if (match) shown++;
+    });
+    count.textContent = q
+      ? shown + ' of ' + items.length + ' publications match'
+      : items.length + ' publications';
+  }
+  input.addEventListener('input', update);
+  update();
+</script>
+
+</body>
+</html>
