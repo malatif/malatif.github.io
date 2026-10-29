@@ -1,1 +1,8 @@
 # malatif.github.io
+ <!DOCTYPE html>
+   <html>
+     <head><title>My Site</title></head>
+     <body>
+       <h1>Hello, world!</h1>
+     </body>
+   </html>
